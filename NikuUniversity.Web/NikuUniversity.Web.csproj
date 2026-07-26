@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\..\ContosoUniversity\ContosoUniversity\ContosoUniversity.Web\Logging\ILogger.cs" Link="Logging\ILogger.cs" />
+    <Compile Include="..\..\..\ContosoUniversity\ContosoUniversity\ContosoUniversity.Web\Logging\Logger.cs" Link="Logging\Logger.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NikuUniversity.ServiceDefaults\NikuUniversity.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="13.4.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logging\" />
+  </ItemGroup>
+
+</Project>

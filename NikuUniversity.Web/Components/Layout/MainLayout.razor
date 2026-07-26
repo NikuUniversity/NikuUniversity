@@ -1,0 +1,84 @@
+﻿@inherits LayoutComponentBase
+
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="/" class="brand-link text-decoration-none">
+        <span class="brand-text fw-bold"><i class="fas fa-graduation-cap"></i> Niku University</span>
+    </a>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <nav class="mt-2">
+            <NavMenu />
+        </nav>
+    </div>
+</aside>
+
+<!-- Content Wrapper -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Dashboard</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active">Dashboard</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Top Row with About -->
+            <div class="top-row mb-4">
+                <a href="https://learn.microsoft.com/aspnet/core/" target="_blank" class="btn btn-sm btn-info">
+                    <i class="fas fa-book"></i> Learn ASP.NET Core
+                </a>
+                <a href="https://github.com/NikuUniversity/NikuUniversity" target="_blank" class="btn btn-sm btn-secondary ms-2">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+
+            <!-- Main Content Area -->
+            <article class="content-area">
+                @Body
+            </article>
+        </div>
+    </section>
+</div>
+
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+    <div class="p-3">
+        <h5>Customization Options</h5>
+        <hr class="mb-2" />
+        <div class="mb-2">
+            <small>Theme Colors</small>
+        </div>
+    </div>
+</aside>
+
+<!-- Error UI -->
+<div id="blazor-error-ui" role="alert">
+    <div class="alert alert-danger mb-0" role="alert">
+        <strong>An unhandled error has occurred.</strong> Please refresh the page or contact support.
+        <button type="button" class="btn-close ms-2" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="main-footer bg-white">
+    <strong>Copyright &copy; 2024 <a href="/">Niku University</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+        <b>Version</b> 1.0.0
+    </div>
+</footer>

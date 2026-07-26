@@ -1,0 +1,17 @@
+<Solution>
+  <Project Path="DBConnector/DBConnector.csproj" Id="f1f799ff-7b57-4b87-b585-7b9f0edeb0ca" />
+  <Project Path="NikuUniversity.ApiService/NikuUniversity.ApiService.csproj" />
+  <Project Path="NikuUniversity.App/NikuUniversity.App.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="NikuUniversity.AppHost/NikuUniversity.AppHost.csproj" />
+  <Project Path="NikuUniversity.Common/NikuUniversity.Common.csproj" Id="865cbb5f-e27b-47d3-92c3-3d2e31db7176" />
+  <Project Path="NikuUniversity.Core/NikuUniversity.Core.csproj" Id="334b0c24-1002-465e-b86b-92878e2ac9f2" />
+  <Project Path="NikuUniversity.Data/NikuUniversity.Data.csproj" Id="607b8525-e2ea-4324-a549-6f55c3e9c91a" />
+  <Project Path="NikuUniversity.GoogleClassroom/NikuUniversity.GoogleClassroom.csproj" Id="957e96e4-467f-40b7-acf4-601e23e884f5" />
+  <Project Path="NikuUniversity.ServiceDefaults/NikuUniversity.ServiceDefaults.csproj" />
+  <Project Path="NikuUniversity.Shared/NikuUniversity.Shared.csproj" Id="eae6a1de-477b-46ff-944e-18b93662bda7" />
+  <Project Path="NikuUniversity.Tests/NikuUniversity.Tests.csproj" />
+  <Project Path="NikuUniversity.Web/NikuUniversity.Web.csproj" />
+  <Project Path="NikuUniversity.Worker/NikuUniversity.Worker.csproj" />
+</Solution>

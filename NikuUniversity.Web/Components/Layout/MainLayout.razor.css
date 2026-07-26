@@ -1,0 +1,173 @@
+/* AdminLTE Layout Styles for Blazor */
+
+.main-sidebar {
+    flex-shrink: 0;
+    width: 250px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.brand-link i {
+    margin-right: 0.5rem;
+    font-size: 2rem;
+}
+
+.sidebar {
+    padding: 0.5rem 0;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content-header {
+    background-color: white;
+    padding: 1.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.content-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.content {
+    flex: 1;
+    padding: 1.5rem;
+    overflow-y: auto;
+    background-color: #f5f7fa;
+}
+
+.content-area {
+    display: block;
+}
+
+.main-footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    border-top: 1px solid #dee2e6;
+    margin-top: auto;
+}
+
+.control-sidebar {
+    display: none;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-item {
+    color: #6c757d;
+}
+
+.breadcrumb-item.active {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Top row buttons */
+.top-row {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.top-row .btn {
+    margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-sidebar {
+        position: fixed;
+        left: -250px;
+        z-index: 900;
+        transition: left 0.3s ease;
+    }
+
+    .main-sidebar.show {
+        left: 0;
+    }
+
+    .content-wrapper {
+        margin-left: 0;
+    }
+
+    .content-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+}
+
+@media (max-width: 640.98px) {
+    .top-row {
+        margin-bottom: 1rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+}
+
+/* Scrollbar styling for main-sidebar */
+.main-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.main-sidebar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.main-sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.main-sidebar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Error UI styling */
+#blazor-error-ui {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+#blazor-error-ui.show {
+    display: block;
+}
+
+/* Flexbox wrapper for layout */
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+

@@ -1,0 +1,62 @@
+﻿<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+    <!-- Dashboard -->
+    <li class="nav-item">
+        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+            <i class="nav-icon fas fa-th-large"></i>
+            <p>Dashboard</p>
+        </NavLink>
+    </li>
+
+    <!-- Counter Page -->
+    <li class="nav-item">
+        <NavLink class="nav-link" href="counter">
+            <i class="nav-icon fas fa-calculator"></i>
+            <p>Counter</p>
+        </NavLink>
+    </li>
+
+    <!-- Weather Page -->
+    <li class="nav-item">
+        <NavLink class="nav-link" href="weather">
+            <i class="nav-icon fas fa-cloud"></i>
+            <p>Weather</p>
+        </NavLink>
+    </li>
+
+    <!-- Divider -->
+    <li class="nav-header">System</li>
+
+    <!-- Utilities Section (collapsible) -->
+    <li class="nav-item">
+        <a href="#" class="nav-link" data-toggle="collapse" data-target="#utilitiesMenu" aria-expanded="false">
+            <i class="nav-icon fas fa-cogs"></i>
+            <p>
+                Utilities
+                <i class="fas fa-angle-left right"></i>
+            </p>
+        </a>
+        <ul class="nav nav-treeview" id="utilitiesMenu" style="display: none;">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Settings</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Help</p>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+@code {
+    private bool showNavMenu = true;
+
+    private void ToggleNavMenu()
+    {
+        showNavMenu = !showNavMenu;
+    }
+}
